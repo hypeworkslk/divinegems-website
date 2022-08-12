@@ -1,0 +1,18 @@
+.about-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-image {
+    flex-basis: 50%;
+    object-fit: cover;
+    max-width: 45%;
+    max-height: 40vh;
+}
+
+.about-para {
+    flex-basis: 50%;
+    font-family: "Santral";
+}
