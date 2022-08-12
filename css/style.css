@@ -1,0 +1,100 @@
+.carousel {
+    height: 65vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel {
+        height: auto;
+    }
+}
+
+.carousel-item > img {
+    max-height: 65vh;
+    object-fit: cover;
+}
+
+.welcome {
+    margin: 3rem;
+    font-family: "Santral";
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.545);
+}
+
+.section {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header {
+    font-family: "Albra";
+    font-size: 3rem !important;
+    margin-inline: 2rem;
+}
+
+.section-content {
+    margin-top: 2rem;
+    font-family: "Santral";
+    font-size: 1rem;
+    margin-inline: 20%
+}
+
+@media only screen and (max-width: 768px) {
+    .section-content {
+        text-align: justify;
+    }
+}
+
+.section-button {
+    color: black;
+    text-decoration: none;
+    font-family: "Gotham";
+    font-weight: 900;
+}
+
+.section-button:hover {
+    color: var(--gold-primary);
+    transition: 100ms;
+}
+
+.image-container {
+    margin-inline: max(1rem, 15%);
+    margin-bottom: 2rem;
+    display: grid;
+    column-gap: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 70%;
+}
+
+.image-container > img {
+    width: 100%;
+    max-height: calc(55vw / 3);
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container > img {
+        max-height: 100%;
+    }
+
+    .image-container > img:not(:first-child) {
+        display: none;
+    }
+}
+
+.content {
+    margin-top: 7rem;
+    margin-inline: 15%;
+}
+
+.content-title {
+    font-family: "Albra";
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}

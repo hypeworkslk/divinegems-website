@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Santral";
+    src: url(./fonts/Santral-Light.otf);
+}
+
+@font-face {
+    font-family: "Albra";
+    src: url(./fonts/Albra.otf);
+}
+
+:root {
+    --background-primary: #17302e;
+    --gold-primary: #e3b466;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: var(--background-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icons {
+    margin-left: 4rem;
+    position: absolute;
+}
+
+.header-icons > a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header-icons > a:not(:first-child) {
+    margin-left: 1.5rem;
+}
+
+.header-logo-link {
+    display: absolute;
+    margin: auto;
+    max-height: 60px;
+}
+
+.header-logo {
+    max-height: 60px;
+}
+
+.header-burger {
+    display: none;
+    position: absolute;
+    right: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-logo {
+        max-height: 35px;
+    }
+
+    .header-icons {
+        margin-left: 1rem;
+    }
+
+    .header-icons > a {
+        font-size: 1rem !important;
+    }
+
+    .header-icons > a:not(:first-child) {
+        margin-left: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header-logo {
+        max-height: 28px;
+    }
+
+    .header-icons > a:not(:first-child) {
+        margin-left: 0.25rem;
+    }
+}
+
+.mobile-navbar {
+    background-color: var(--background-primary);
+    display: none;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 500ms;
+}
+
+.mobile-navbar.active {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0);
+    opacity: 100%;
+    transition: all 500ms;
+}
+
+.navlink-mobile {
+    text-decoration: none;
+    color: var(--gold-primary);
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 0.5rem;
+}
+
+.navlink-mobile:hover {
+    color: white;
+}
+
+.desktop-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-block: 0.75rem;
+    padding-inline: 10rem;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.366);
+    font-family: "Santral";
+    font-size: 0.9rem;
+}
+
+.navlink {
+    text-decoration: none;
+    color: black;
+}
+
+.navlink:hover {
+    color: var(--background-primary);
+}
+
+@media only screen and (max-width: 1000px) {
+    .desktop-navbar {
+        display: none;
+    }
+    .header-burger {
+        display: inline;
+        color: white;
+        font-size: 1.5rem;
+
+    }
+    /* Use in mobile-nav-open and mobile-nav-close Buttons */
+    .inactive {
+        display: none;
+    }
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    margin-top: 5rem;
+    padding-inline: max(1rem, 15%);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: var(--background-primary);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Santral";
+    color: var(--gold-primary);
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+    }
+    .footer-left, .footer-right{
+        text-align: center;
+    }
+    .footer-left {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.footer-social-icon-links {
+    height: auto;
+}
+
+footer > hr {
+    height: 3px;
+    color: var(--gold-primary);
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Santral";
+    color: var(--gold-primary);
+    text-align: center;
+}
+
+.footer-item {
+    margin-bottom: 0.5rem;
+}
+
+.footer-hypeworks {
+    text-decoration: none;
+    color: var(--gold-primary);
+}
+
+.footer-hypeworks:hover {
+    color: white;
+}
+
+.divinegems-socials-footer > a{
+    color: var(--gold-primary) !important;
+}
