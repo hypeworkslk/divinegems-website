@@ -1,0 +1,36 @@
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    padding-top: 2.5rem;
+  }
+  
+  /* Create three equal columns */
+.gallery-column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+  
+.gallery-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+/* On tablet devices columns decrease to 2 */
+@media screen and (max-width: 800px) {
+    .gallery-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* On mobile devices columns decrease to 1 */
+@media screen and (max-width: 600px) {
+    .gallery-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
