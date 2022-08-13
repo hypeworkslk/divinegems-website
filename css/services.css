@@ -1,0 +1,26 @@
+.services-row {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.service-card {
+    background-color: var(--background-primary);
+    padding-top: 2rem;
+    margin: 1rem;
+    color: white;
+}
+
+.service-card > img {
+    max-width: 100%;
+    aspect-ratio: 1;
+    padding: 1.5rem;
+    object-fit: cover;
+}
+
+.service-para {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+}
