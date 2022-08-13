@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Santral";
-    src: url(./fonts/Santral-Light.otf);
+    src: url(../fonts/Santral-Light.otf);
 }
 
 @font-face {
     font-family: "Albra";
-    src: url(./fonts/Albra.otf);
+    src: url(../fonts/Albra.otf);
 }
 
 :root {
