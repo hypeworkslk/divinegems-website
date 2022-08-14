@@ -17,5 +17,6 @@
 .gem-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1vw 10px;
+    row-gap: 20px;
+    column-gap: 20px;
 }
