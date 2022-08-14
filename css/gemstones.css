@@ -1,0 +1,15 @@
+
+/* Bootstrap overrides */
+.card {
+    background-color: black;
+    border: 0px;
+    font-weight: 300;
+}
+
+.row {
+    padding-bottom: 3.5rem;
+}
+
+.container {
+    margin-top: 3rem;
+}
