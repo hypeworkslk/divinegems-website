@@ -224,3 +224,32 @@ footer > hr {
 .divinegems-socials-footer > a{
     color: var(--gold-primary) !important;
 }
+
+
+
+
+/* .content only used on subpages */
+
+.content {
+    margin-top: 4rem;
+    margin-inline: 15%;
+}
+
+.content-title {
+    font-family: "Albra";
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-hidden {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        margin-inline: 2rem;
+    }
+}

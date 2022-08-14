@@ -40,6 +40,12 @@
     margin-inline: 20%
 }
 
+@media only screen and (max-width: 480px) {
+    .section-content {
+        margin-inline: 2rem;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .section-content {
         text-align: justify;
@@ -84,23 +90,5 @@
 
     .image-container > img:not(:first-child) {
         display: none;
-    }
-}
-
-.content {
-    margin-top: 4rem;
-    margin-inline: 15%;
-}
-
-.content-title {
-    font-family: "Albra";
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-@media only screen and (max-width: 768px) {
-    .mobile-hidden {
-        display: none !important;
     }
 }
