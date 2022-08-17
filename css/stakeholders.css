@@ -1,0 +1,10 @@
+.stakeholder-section {
+    margin-block: 3rem;
+    font-family: "Santral";
+}
+
+@media only screen and (max-width: 992px) {
+    .stakeholder-para {
+        text-align: justify;
+    }
+}
