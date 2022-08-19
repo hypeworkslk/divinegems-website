@@ -8,6 +8,11 @@
     src: url(../fonts/Albra.otf);
 }
 
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/Gotham-Bold.otf);
+}
+
 :root {
     --background-primary: #013430;
     --gold-primary: #e3b466;
