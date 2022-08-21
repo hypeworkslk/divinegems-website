@@ -100,6 +100,7 @@
 .mobile-navbar.active {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     transform: translateY(0);
     opacity: 100%;
     transition: all 500ms;
@@ -230,6 +231,11 @@ footer > hr {
     color: var(--gold-primary) !important;
 }
 
+@media only screen and (max-width: 480px) {
+    footer {
+        font-size: 0.8rem;
+    }
+}
 
 
 
