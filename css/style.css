@@ -14,6 +14,14 @@
     object-fit: cover;
 }
 
+.carousel-indicators li {
+    border-radius: 12px;
+    border: 1px solid white;
+    width: 12px;
+    height: 12px;
+    background-color: #40404000;
+}
+
 .welcome {
     margin: 0.5rem;
     font-family: "Santral";
