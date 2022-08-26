@@ -1,9 +1,12 @@
 
 /* Bootstrap overrides */
 .card {
-    background-color: black;
-    border: 0px;
+    font-family: "Gotham";
+    border: 2px solid black;
     font-weight: 300;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
 }
 
 .row {
