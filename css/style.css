@@ -103,3 +103,8 @@
         display: none;
     }
 }
+
+/* Bootstrap 4 hover override */
+a:hover {
+    text-decoration: none !important;
+}
