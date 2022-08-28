@@ -24,11 +24,14 @@
 
 .welcome {
     margin: 0.5rem;
-    font-family: "Santral";
-    font-size: 1.5rem;
-    text-align: center;
     color: rgba(0, 0, 0, 0.545);
     margin-bottom: 2rem!important;
+}
+
+.welcome-text {
+    font-size: 1.5em !important;
+    font-family: "Santral";
+    text-align: center;
 }
 
 .section {
